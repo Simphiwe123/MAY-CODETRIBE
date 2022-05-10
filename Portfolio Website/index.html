@@ -1,76 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <style>
-           
-            #logd{
-
-                height: auto;
-                width: 40%;
-    margin-left: 30%;
-    margin-top: 10%;
-            }
-            #emtb, #pstb{
-                text-align: center;
-                background-color: transparent;
-
-                border-radius: 10px 10px 10px 10px; 
-            }
-            button{
-                border-radius: 10px 10px 10px 10px;
-                background-color: transparent;
- 
-            }
-
-            #blogo{
-     margin-left: 2%;
-     float: left;
- }
- #bimglogo{
+  <head>
+    <title></title>
+    <style>
+      .w3docs {
+        margin-left: 70px;
+        font-weight: bold;
+        text-align: left;
+        font-family: sans-serif, bold, Arial, Helvetica;
+        font-size: 14px;
+      }
+      
+      
+      div input {
+        margin-right: 10px;
+        border-radius: 10px 10px 10px 10px;
+        text-align: center;
+      }
      
-     height: 8%;
-     width: 20%;
-    
- }
- nav{
-    margin-top: 0%;
-     height: 10%;
-     width: 80%;
-    
-     float:left;
-     margin-left: 5%;
- }
- #amazonl{
-     float: left;
-     height: 2%;
-     width: 10%;
-     margin-left: 0%;
-     margin-top: 0%;
- }
-        </style>
-    </head>
-    <body>
-        <nav>
+      form input {
+        padding: 10px;
+      }
+      form select {
+        background-color: #ffffff;
+        padding: 5px;
+      }
+      #rdiv{
+          width: 60%;
+          height: auto;
+          background-color: antiquewhite;
+          float: left;
+          margin-left: 15%;
+          margin-top: 5%;
 
-            <img src="amazon-kindle-fire-logo-black-and-white (1).png" id="amazonl">
-        </nav>
+      }
+      #bimglogo{
+          height: 100px;
+          width: 150px;
+          float: left;
+          margin-top: 0%;
+          margin-left: 0%;
+      }#footerr
+      {
+
+        width: 50%;
+        height: auto;
+        float: left;
+       
+        margin-left: 15%;
+      }
+      #amazonl{
+        float: left;
+       
+        margin-left: 15%;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="login.js"></script>
+     
+  </head>
+  <body>
+    <nav>
+
+      <img src="rrlogo.png" id="amazonl">
+  </nav>
+  <div id="rdiv">
+    <h2 style ="text-align: center"> LOGIN </h2>
+    <form id="RegForm" action="home.html" onsubmit="ValidationForm()" method="post" class="w3docs">
+      <center>
+      
+          
+          <br>
+          <div>
+           
+            <input type="email" id="E-mail" size="60" name="Email" placeholder="Email" required>
+          </div>
+          <br>
+          <div>
+            
+            <input type="password" id="Password" size="60" name="Password" placeholder="Password" required>
+          </div>
+         
         
-        <div id="maind">
-
-            <div id="logd">
-<center><h1>LOGIN</h1></center>
-<form action="" method="">
-
-    <center><input type="text" placeholder="EMAIL ADDRESS" id="emtb"></center><br><br>
-<center><input type="pawssword" placeholder="PASSWORD" id="pstb"></center><br><br>
-<center><button onclick="">LOGIN</button></center>
-<center><p>Don't have an account please click <a href="reg.html"> here </a> to register.</p></center>
-</form>
-
-
-            </div>
-        </div>
-        <h3 id="blogo">Product of<br><img src="amazon-logo-transparent.png" id="bimglogo"></h3>
-    </body>
-    </html>
+          <br>
+          <input type="submit" value="Login" name="Submit" onclick="insert()">
+          <p>Don't have an account click<a href="reg.html"> here </a>to register.</p>
+          </div>
+      </center>
+    
+    </form>
+    <div id="display"></div>
+  </div>
+ 
+    
+   <div id="footerr"><h3 id="blogo">Product of<br><img src="amazon-logo-transparent.png" id="bimglogo"></h3></div> 
+  </body>
+</html>

@@ -57,10 +57,12 @@
     #fbooks{
        
         width:auto;
-        height: 50%;
-      
+        height: 55%;
+      background-color:transparent;
+      position: relative;
         margin-top: 0%;
-        display: flex;  flex-wrap: nowrap;  overflow-x: auto;  
+        overflow: auto;
+  white-space: nowrap;
     }
     #nbooks{
         background-color: transparent;
@@ -140,11 +142,11 @@
  h4{
      text-align: center;
  }
- #nr{
+ #nr,#nr1{
      margin-left: 0%;
  }
  #tbb1{
-     width: 20%;
+    width: 28%;
      height: 40%;
      float: left;
      
@@ -154,34 +156,100 @@
      
      
  }
- #tbb2,#tbb3,#tbb4{
-    width: 20%;
+ #tbb4{
+    width: 28%;
      height: 40%;
      float: left;
-     background-color:lightslategrey;
+     margin-left: 90%;
      border-radius: 30px 30px 30px 30px;
      margin-top: 13%;
+     background-image:url("171213-F-SE307-0266-scaled.jpg") ;
+     position: absolute;
+ }
+ #tbb2{
+    width: 28%;
+     height: 40%;
+     float: left;
      margin-left: 2%;
+     border-radius: 30px 30px 30px 30px;
+     margin-top: 13%;
+     background-image: url("black-white-forest-pathway-plain.jpg");
+ }
+ #tbb3{
+    width: 28%;
+     height: 40%;
+     float: left;
+     margin-left: 2%;
+     border-radius: 30px 30px 30px 30px;
+     margin-top: 13%;
+     background-image: url("444961-full-size-blue-sky-wallpaper-2560x1600-high-resolution.jpg");
  }
  #imgtop1{
-     height: 100%;
-     width: 100%;
+    width: 28%;
+     height: 40%;
      float: left;
      
-     margin-top: -30%;
-    
+     border-radius: 30px 30px 30px 30px;
+     margin-top: 13%;
+     background-image: url("download (1).jpg");
  }
  #dimgtop1{
-    height: 100%;
-     width: 40%;
+    height: 70%;
+     width: 10%;
      float: left;
-     margin-left: 5%;
-     margin-bottom: 10%;
+     margin-left: 2%;
+     margin-top: 2%;
      background-color:lightslategrey;
      border-radius: 30px 30px 30px 30px;
-     position:relative;
+     position:absolute;
 
  }
+
+ #dimgtop2{
+    height: 70%;
+     width: 10%;
+     float: left;
+     margin-left: 32%;
+     margin-top: 2%;
+     background-color:red;
+     border-radius: 30px 30px 30px 30px;
+     position:absolute;
+
+ }
+
+ #dimgtop3{
+    height: 70%;
+     width: 10%;
+     float: left;
+     margin-left: 62%;
+     margin-top: 2%;
+     background-color:red;
+     border-radius: 30px 30px 30px 30px;
+     position:absolute;
+ }
+ #dimgtop4{
+    height: 70%;
+     width: 10%;
+     float: left;
+     margin-left: 92%;
+     margin-top: 2%;
+     background-color:red;
+     border-radius: 30px 30px 30px 30px;
+     position:absolute;
+ }
+
+
+ /*book image*/
+ #resbook1,#resbook2,#resbook3,#resbook4{
+     height: 100%;
+     width: 100%;
+     border-radius: 30px 30px 30px 30px;
+ }
+
+
+
+
+
  nav{
     margin-top: 0%;
      height: 5%;
@@ -194,23 +262,34 @@
      margin-right: 5%;
      margin-top: 1%;
  }
- #sbutton{
+ button{
      float: right;
      margin-right: 5%;
      margin-top: 0.5%;
      border-radius: 0px 30px 30px 0px;
-     height: 80%;
+     height: 70%;
+     width: 50px;
      border-left: 0ch;
-     background-color:#C0C0C0  ;
+     background-color: transparent;
+    
+     background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+  cursor: pointer;
+  opacity: 0.7;
+}
  
- }
+button[type="submit"]:hover {
+  opacity: 1;
+}
  #sc{
     float: right;
      margin-right: 0%;
      margin-top: 0.5%;
      border-radius: 30px 0px 0px 30px;
-     height: 80%;
+     height: 70%;
      border-right:0ch;
+     background-color: transparent;
+     width: 20%;
+     text-align: center;
  }
  #amazonl{
      float: left;
@@ -227,48 +306,135 @@
      height: 8%;
     
  }
+ 
+ #book1_d,#book2_d,#book3_d,#book4_d{
+     float: right;
+     height: 80%;
+     background-color:transparent;
+     width: 55%;
+     margin-top: 4%;
+     color:white;
+ }
+ #aname1, #aname2, #aname3{
+     height: 80%;
+     width: 70%;
+     float: right;
+     background-color:transparent;
+     color: black;
+ }
+ #saraw{
+     width: 100%;
+     height: auto;
+     background-color: transparent;
+ }
+ F
+ #label, #label2, #label3, #label4, #label5{
+     background-color:lightgrey;
+     width: 80%;
+     height: auto;
+     float: left;
+     margin-left: 4%;
+     border-radius: 10px 10px 10px 10px;
+     text-align: center;
+     color: orange;
+
+ }
     </style>
+    
+    </head>
     <body>
 
-    
+        
     <div id="top">
         <nav>
             <h4 id="nh41"><a href="">Featured</a></h4>
             <h4 id="nh42"><a href="">New Release</a></h4>
-            <input type="submit" id="sbutton" placeholder="SEARCH">
+            <button type="submit"></button>
             <input type="search" placeholder="Search..." id="sc">
-            <img src="amazon-kindle-fire-logo-black-and-white (1).png" id="amazonl">
+            <img src="rrlogo.png" id="amazonl">
         </nav>
         <div id="books">
             <div id="fbooks">
+                <h3 id="nr"></h3>
                <div id="tbb1">
-                 <div id="dimgtop1"><img src=""></div>  
+                <div id="book1_d"> <h2 id="h21"></h2>
+                <p id="p1d"></p>
+                </div>
+               
                </div>
-               <div id="tbb2"></div>
-               <div id="tbb3"></div>
-               <div id="tbb4"></div>
+               <div id="dimgtop1"><a href="https://www.amazon.com/dp/1710399449"><img src="rs=w_600,cg_true.webp" id="resbook1"></a></div> 
+               
+               <div id="tbb2">
+               
+                    <div id="book2_d"> <h2 id="h22"></h2>
+                        <p id="p2d"></p>
+               
+               </div></div>
+               <div id="dimgtop2"><a href="https://www.amazon.com/dp/1986089304"><img src="1986089304.01._SCLZZZZZZZ_SX500_.jpg" id="resbook2"></a></div>
+
+
+               <div id="tbb3">
+                
+                    <div id="book3_d"> <h2 id="h23"></h2>
+                        <p id="p3d"></p>
+                </div>
+               </div>
+               <div id="dimgtop3"><a href="https://openlibrary.org/works/OL69503W/Peak_Performance"><img src="10858619-L.jpg" id="resbook3"></a></div>
+
+               <div id="tbb4">
+
+    <div id="book4_d"> <h2 id="h24"></h2>
+        <p id="p4d"></p>
+</div>
+
+               </div>
+               <div id="dimgtop4"><a href="https://openlibrary.org/books/OL3414326M/Wildfire"><img src="10858364-L.jpg" id="resbook4"></a></div>
+               
              
                
             </div>
 
             <div id="nbooks">
-                <h3 id="nr">New Release</h3>
-            <div id="b1"><a href="https://www.bookbub.com/books/his-flower-queen-by-lena-hart?ebook_deal"><img src="pro_pbid_19944.webp" id="imgb1"><h4>His Flower Queen</h4></a></div>
-            <div id="b2"><a href="https://www.bookbub.com/books/happily-ever-after-by-jenn-faulk?ebook_deal"><img src="pro_pbid_1199739.webp" id="imgb2"><h4>Happily Ever After</h4></a></div>
-            <div id="b3"><a href="https://www.bookbub.com/books/club-shadowlands-by-cherise-sinclair?ebook_deal"><img src="pro_pbid_5297.webp" id="imgb3"><h4>Club Shadowlands</h4></a></div>
-            <div id="b4"><a href="https://www.bookbub.com/books/sign-off-by-patricia-mclinn?ebook_deal"><img src="pro_pbid_6432.webp" id="imgb4"><h4>Sign Off</h4></div>
-            <div id="b5"><a href="https://www.bookbub.com/books/deliver-me-by-farrah-rochon?ebook_deal"><img src="pro_pbid_9300.webp" id="imgb5"><h4>Deliver Me</h4></div>
+                <h3 id="nr1"></h3>
+                
+            <div id="b1"><a href="https://www.bookbub.com/books/his-flower-queen-by-lena-hart?ebook_deal"><img src="pro_pbid_19944.webp" id="imgb1"><h4 id="h4b1"></h4></a>
+            
+                <p align="center" id="blbooksname1"></p>
+                <center><div id="label"></div></center>
+            </div>
+            <div id="b2"><a href="https://www.bookbub.com/books/happily-ever-after-by-jenn-faulk?ebook_deal"><img src="pro_pbid_1199739.webp" id="imgb2"><h4 h4 id="h4b2"></h4></a>
+            
+            
+                <p align="center" id="blbooksname2"></p>
+              <center><div id="label2">Fiction</div></center>
+            </div>
+            <div id="b3"><a href="https://www.bookbub.com/books/club-shadowlands-by-cherise-sinclair?ebook_deal"><img src="pro_pbid_5297.webp" id="imgb3"><h4 h4 id="h4b3"></h4>
+        </a>
+        <p align="center" id="blbooksname3"></p>
+        <center><div id="label3">Fiction</div></center>
+    </div>
+            <div id="b4"><a href="https://www.bookbub.com/books/sign-off-by-patricia-mclinn?ebook_deal"><img src="pro_pbid_6432.webp" id="imgb4"><h4 id="h4b4"></h4></a>
+            <p align="center" id="blbooksname4"></p>
+            <center><div id="label4">Fiction</div></center>
+            
+            </div>
+            <div id="b5"><a href="https://www.bookbub.com/books/deliver-me-by-farrah-rochon?ebook_deal"><img src="pro_pbid_9300.webp" id="imgb5"><h4 id="h4b5"></h4>
+                
+                
+                <p align="center" id="blbooksname5"></p>
+                <center><div id="label5">Fiction</div></center>
+            </div>
                 <div id="fame">
 
 
 
 
-                    <center><h2>Famous Auothors</h2></center>
-                   <div id="author1"><img src="download.jpg" id="img1"></div>
+                    <center><h2 id="fauthor"></h2></center>
+                   <div id="author1"><img src="download.jpg" id="img1"><div id="aname1"><h2 id="author11"></h2><p id="bookno1"></p></div></div>
                    <hr>
-                   <div id="author2"><img src="shutterstock_editorial_9689901an.webp" id="img2"></div>
+                   <div id="author2"><img src="shutterstock_editorial_9689901an.webp" id="img2"><div id="aname2"><h2 id="author12"></h2><p id="bookno2"></p></div></div>
                    <hr>
-                   <div id="author3"><img src="Danielle-Steel-1024x1024.jpg" id="img3"></div> 
+                   <div id="author3"><img src="Danielle-Steel-1024x1024.jpg" id="img3"><div id="aname3"><h2 id="author13"></h2><p id="bookno3"></p></div></div> 
                     
           
 
@@ -278,15 +444,25 @@
             </div>
         </div>
     <div id="sarah">
-        <center><img src="Corporate-headshots-of-women-NJ-New-Jersey.jpg" id="wimg" </center>
-     <br><br>
-     <center><h3>Welcome Back</h3></center>
-    <center><h2>Sarah</h2></center>
+        <center><img src="Corporate-headshots-of-women-NJ-New-Jersey.jpg" id="wimg" ></center>
+
+
+
+
+
+
+        <br><br>
+    <div id="saraw">
+       <h3 id="Welcomeid"></h3> 
+        <center><h1>Sarah</h1></center>
+
+
+    </div>
      </div>
 
    <div id="plinks">
        <br> <br>
-       <a href="#"><img src="" id=""> My Kindle Board</a>
+       <a href="#"><img src="" id=""><p id="link1"></p> My Kindle Board</a>
        <br> <br>
        <a href="#"><img src="collection-1-512.webp" id="icon1"> Collections</a>
        <br> <br>
@@ -300,7 +476,7 @@
    
 
     </div>
-    
+    <script src="real.js"></script>
     <h3 id="blogo">Product of<br><img src="amazon-logo-transparent.png" id="bimglogo"></h3>
  
 
