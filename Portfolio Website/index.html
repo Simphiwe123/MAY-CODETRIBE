@@ -55,8 +55,7 @@
         margin-left: 15%;
       }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="login.js"></script>
+      <script src="real.js"></script>
      
   </head>
   <body>
@@ -66,24 +65,24 @@
   </nav>
   <div id="rdiv">
     <h2 style ="text-align: center"> LOGIN </h2>
-    <form id="RegForm" action="home.html" onsubmit="ValidationForm()" method="post" class="w3docs">
+    <form id="RegForm" action="home.html" onsubmit="return ValidationForm()" method="post" class="w3docs">
       <center>
       
           
           <br>
           <div>
            
-            <input type="email" id="E-mail" size="60" name="Email" placeholder="Email" required>
+            <input type="email" id="maill" size="60" name="Email" placeholder="Email" required>
           </div>
           <br>
           <div>
             
-            <input type="password" id="Password" size="60" name="Password" placeholder="Password" required>
+            <input type="password" id="Passwordl" size="60" name="Password" placeholder="Password" required>
           </div>
          
         
           <br>
-          <input type="submit" value="Login" name="Submit" onclick="insert()">
+          <input type="submit" value="Login" name="Submit" onclick="log()">
           <p>Don't have an account click<a href="reg.html"> here </a>to register.</p>
           </div>
       </center>

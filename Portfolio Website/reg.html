@@ -64,7 +64,7 @@
   </nav>
   <div id="rdiv">
     <h2 style ="text-align: center"> Register </h2>
-    <form name="RegForm" action="index.html" onsubmit="return ValidationForm()"  class="w3docs">
+    <form name="RegForm" action="index.html" onsubmit="return ValidationForm()"  class="w3docs" method="post">
       <center>
         <div>
         
@@ -78,7 +78,7 @@
           <br>
           <div>
            
-            <input type="text" id="E-mail" size="60" name="Email" placeholder="Email" required>
+            <input type="text" id="mail" size="60" name="Email" placeholder="Email" required>
           </div>
           <br>
           <div>
@@ -93,7 +93,6 @@
           </div>
           <br>
           <input type="submit" value="Register" name="Submit" onclick="reg()">
-          <input type="submit" value="test" name="Submit" onclick="get()">
          <p>Have an account click<a href="index.html"> here </a>to login.</p>
           </div>
       </center>

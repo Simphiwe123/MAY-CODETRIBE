@@ -49,35 +49,55 @@ const side_div=["Welcome back"];
 document.getElementById("Welcomeid").innerHTML=side_div[0];
 
 
-function reg(){
+    function reg(e){
+        event.preventDefault();
+        var Name=document.getElementById('Name').value;
+        var lName=document.getElementById('lName').value;
+        var mail=document.getElementById('mail').value;
+        var Password=document.getElementById('Password').value;
+        var imagess=document.getElementById('imagess').value;
 
-    var new_data=document.getElementById('Name').value;
-    var new_data1=document.getElementById('lName').value;
-    var new_data2=document.getElementById('E-mail').value;
-    var new_data3=document.getElementById('Password').value;
-    var new_data4=document.getElementById('imagess').value;
-    
-    if(localStorage.getItem('data')== null){
-    
-    
-    localStorage.setItem('data','[]');
-    }
-    var old_data=JSON.parse(localStorage.getItem('data'));
-    old_data.push(new_data);
-    old_data.push(new_data1);
-    old_data.push(new_data2);
-    old_data.push(new_data3);
-    old_data.push(new_data4);
-    localStorage.setItem('data',JSON.stringify(old_data));
-    
-    alert("Registered");
-    
-    }
-    function get() {
-        var x = localStorage.getItem("data");
-        alert(x);
-      }
 
+        var user={
+            Name: Name,
+            lName: lName,
+            mail: mail,
+            Password: Password,
+            imagess: imagess,
+
+
+        };
+        var json= JSON.stringify(user);
+        localStorage.setItem(Name,json);
+       
+
+    }
+    function log(e){
+        event.preventDefault();
+     
+        var maill=document.getElementById('maill').value;
+        var Passwordl=document.getElementById('Passwordl').value;
+
+        var mailA=localStorage.getItem(maill);
+        var data=JSON.parse(mailA);
+        console.log(data);
+
+        if(mailA == null){
+
+            alert("Wrong Email!")
+        }else if(maill == data.maill && Passwordl == data.Passwordl){
+            alert("WELCOME!");
+
+        }else{
+
+            alert("OOPS!");
+        }
+
+
+
+      
+
+    }
 
 
 
