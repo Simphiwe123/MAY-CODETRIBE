@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="log_and_reg.css">
+   
+    <script>
+    
+    
+    function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+
+
+      
+    }
+  
+          
+    </script>
+  </head>
+  <body>
+    <nav>
+  
+      <img src="Amazon_Kindle_logo.svg" id="amazonl">
+  </nav><br><br>
+
+    <div id="rdiv1">
+      <center><h1 id="logt"></h1></center> 
+     <br><br>
+    
+      <form id="RegForm"  class="w3docs">
+        <center>
+        
+            
+            <br>
+            <div>
+             
+              <input type="email" id="maill" size="60" name="Email" placeholder="Email" required>
+            </div>
+            <br>
+            <div>
+              
+              <input type="password" id="Passwordl" size="60" name="Password" placeholder="Password" required>
+            </div>
+           
+          
+            <br>
+            <input type="submit" value="Login" name="Submitl" onclick="loginn()">
+            <p>Don't have an account click<a href="#" onclick="return show('rdiv','rdiv1');"> here </a>to register.</p>
+            </div>
+           
+        </center>
+      
+      </form>
+     
+    </div>
+   
+
+
+
+
+
+
+   
+  
+    <div id="rdiv" style="display:none">
+     <center><h1 id="regt"></h1></center> 
+     <br><br>
+      
+      <form name="RegForm" action="#rdiv1" onsubmit="return ValidationForm()"  class="w3docs" method="post">
+        
+        <center>
+          <div>
+    
+              <input type="text" id="Name" size="60" name="array[]" placeholder="Name" required>
+            </div>
+            <br>
+            <div>
+              
+              <input type="text" id="lName" size="60" name="array[]" placeholder="Surname" required>
+            </div>
+            <br>
+            <div>
+             
+              <input type="text" id="mail" size="60" name="array[]" placeholder="Email" required>
+            </div>
+            <br>
+            <div>
+              
+              <input type="password" id="Password" size="60" name="array[]" placeholder="Password" required>
+            </div>
+           
+            <br>
+            <div>
+              
+              <p>Profile Photo: </p><input type="file" id="imagess" name="array[]">
+
+      
+            </div>
+            <br>
+            <input type="submit" value="Register" id="Submit1" onclick="reg()" >
+           <p>Have an account click<a href="#" onclick="return show('rdiv1','rdiv');"> here </a>to login.</p>
+            </div>
+        </center>
+        
+      </form>
+      
+    </div>
+ 
+   
+  </body>
+  <script src="log.js">
+     
+  </script>
+</html>
+
+
+    
+ 
+    
+  
+ 
